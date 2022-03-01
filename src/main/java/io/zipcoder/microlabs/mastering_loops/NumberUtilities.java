@@ -3,7 +3,7 @@ package io.zipcoder.microlabs.mastering_loops;
 
 public class NumberUtilities {
     public static String getEvenNumbers(int start, int stop) {
-        String result = "";
+       String result = "";
         int num = start;
         while(num < stop){
             if ((num % 2) == 0){
@@ -11,6 +11,8 @@ public class NumberUtilities {
             }
             num++;
         }
+
+
         return result;
     }
 
@@ -29,7 +31,7 @@ public class NumberUtilities {
 
 
     public static String getSquareNumbers(int start, int stop, int step) {
-        String result = "";
+       /* String result = "";
         int num = start;
         int square = 0;
         while(num < stop){
@@ -37,27 +39,33 @@ public class NumberUtilities {
             result= result + square;
             num+=step;
         }
-        return result;
+
+        */
+        return NumberUtilities.getExponentiations(start,stop,step,2);
     }
 
     public static String getRange(int start) {
-        String result = "";
+       /* String result = "";
         int num = 0;
         while(num < start){
                 result= result + num;
             num++;
         }
-        return result;
+
+        */
+        return NumberUtilities.getRange(0,start,1);
     }
 
     public static String getRange(int start, int stop) {
-        String result = "";
+       /* String result = "";
         int num = start;
         while(num < stop){
             result= result + num;
             num++;
         }
-        return result;
+
+        */
+        return NumberUtilities.getRange(start,stop,1);
     }
 
 

@@ -15,20 +15,24 @@ public class TableUtilities {
 
 
     public static String getSmallMultiplicationTable() {
-        String result ="";
+        /*String result ="";
         for(int out =1; out<=5;out++){
             result = result + getRow(out,5);
         }
-        return result;
+
+         */
+        return getMultiplicationTable(5);
     }
 
     public static String getLargeMultiplicationTable() {
-
+/*
         String result ="";
         for(int out =1; out<=10;out++){
             result = result + getRow(out,10);
         }
-        return result;
+
+ */
+        return getMultiplicationTable(10);
     }
 
     public static String getMultiplicationTable(int tableSize) {

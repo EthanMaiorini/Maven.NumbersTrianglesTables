@@ -5,9 +5,8 @@ public class TriangleUtilities {
     public static String getTriangle(int numberOfRows) {
         String output = "";
         for(int num =1; num<=numberOfRows;num++){
-            output = output + getRow(num);
+            output += getRow(num)+"\n";
         }
-
 
         return output;
     }
@@ -15,27 +14,26 @@ public class TriangleUtilities {
         String row = "*";
         String newRow = row;
         for(int x=1; x < numberOfStars;x++){
-            newRow= newRow + row;
+            newRow += row;
         }
-        newRow = newRow +"\n";
         return newRow;
     }
 
     public static String getSmallTriangle() {
-        String output = "";
+        /*String output = "";
         for(int x=1;x<=4;x++){
-            output = output + getRow(x);
+            output += getRow(x)+"\n";
         }
-
-        return output;
+         */
+        return getTriangle(4);
     }
 
     public static String getLargeTriangle() {
-        String outPut = "";
+       /* String outPut = "";
         for(int x=1;x<=10;x++){
-            outPut = outPut + getRow(x);
+            outPut += getRow(x)+"\n";
         }
-
-        return outPut;
+        */
+        return getTriangle(10);
     }
 }
